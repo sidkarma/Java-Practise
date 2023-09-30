@@ -1,0 +1,5 @@
+Order Details:
+Rice: Rs. 200.0
+Dal: Rs. 300.6
+Onion: Rs. 40.5
+Total Amount: Rs. 541.1

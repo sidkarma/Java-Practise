@@ -1,0 +1,3 @@
+Order Details:
+Rice: Rs. 500.0
+Total Amount: Rs. 500.0
