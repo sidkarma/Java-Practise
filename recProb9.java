@@ -15,11 +15,11 @@ public class recProb9 {
         for(int i=0;i<mapping.length();i++) {
             printCombs(str, idx+1, comb+mapping.charAt(i));
         }
-
     }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String str = "23";
+        sc.close()
         printCombs(str, 0, "");
     }
 }
