@@ -19,5 +19,4 @@ public class recProb10 {
         printPerm(str, "");
         sc.close();
     }
-    
 }
