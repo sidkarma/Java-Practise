@@ -19,7 +19,7 @@ public class recProb9 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String str = "23";
-        sc.close()
+        sc.close();
         printCombs(str, 0, "");
     }
 }
