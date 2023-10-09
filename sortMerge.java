@@ -1,5 +1,6 @@
 import java.util.*;
 public class sortMerge {
+    // TC = nlogn
     public static void conquer(int arr[], int si, int mid,int ei) {
         int merged[]  =new int[ei-si+1];
         
@@ -36,6 +37,7 @@ public class sortMerge {
         conquer(arr, si, mid, ei);
     }
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         int arr[] = {6,3,9,5,2,8};
         int n = arr.length;
 
@@ -45,5 +47,6 @@ public class sortMerge {
             System.out.println(arr[i]+" ");
         }
         System.out.println();
+        sc.close();
     }
 }
