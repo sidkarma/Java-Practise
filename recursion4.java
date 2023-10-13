@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// recursion
 public class recursion4 {
 
     public static int calFact(int n) {
