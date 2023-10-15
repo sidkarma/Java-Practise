@@ -19,6 +19,15 @@ class Student {
         System.out.println(this.name);
         System.out.println(this.age);
     }
+
+    Student(Student s2) {
+        this.name = s2.name;
+        this.age = s2.age;
+    }
+
+    Student() {
+
+    }
 }
 
 public class OOPS1 {
@@ -36,8 +45,10 @@ public class OOPS1 {
 
         Student s1 = new Student();
         s1.name = "sidkarma";
-        s1.age = 22;
-        s1.printInfo();
+        s1.age = 25;
+
+        Student s2 = new Student(s1);
+        s2.printInfo();
     }
     
 }
