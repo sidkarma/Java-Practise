@@ -23,18 +23,21 @@ class Student {
 
 public class OOPS1 {
     public static void main(String args[]) {
-        Pen ob1 = new Pen();
-        ob1.color = "blue";
-        ob1.type = "gel";
+        // Pen ob1 = new Pen();
+        // ob1.color = "blue";
+        // ob1.type = "gel";
 
-        Pen ob2 = new Pen();
-        ob2.color = "red";
-        ob2.type = "ballpoint";
+        // Pen ob2 = new Pen();
+        // ob2.color = "red";
+        // ob2.type = "ballpoint";
 
-        ob1.printColor();
-        ob2.printColor();
+        // ob1.printColor();
+        // ob2.printColor();
 
         Student s1 = new Student();
+        s1.name = "sidkarma";
+        s1.age = 22;
+        s1.printInfo();
     }
     
 }
