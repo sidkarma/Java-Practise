@@ -5,15 +5,24 @@ class Pen {
     public void write() {
         System.out.println("Writing simething");
     }
+
+    public void printColor() {
+        System.out.println(this.color);
+    }
 }
 
 public class OOPS1 {
     public static void main(String args[]) {
-        Pen ob = new Pen();
-        ob.color = "blue";
-        ob.type = "gel";
+        Pen ob1 = new Pen();
+        ob1.color = "blue";
+        ob1.type = "gel";
 
-        ob.write();
+        Pen ob2 = new Pen();
+        ob2.color = "red";
+        ob2.type = "ballpoint";
+
+        ob1.printColor();
+        ob2.printColor();
     }
     
 }
