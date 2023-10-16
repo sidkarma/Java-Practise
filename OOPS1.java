@@ -15,18 +15,16 @@ class Student {
     String name;
     int age;
 
-    public void printInfo() {
-        System.out.println(this.name);
-        System.out.println(this.age);
+    public void printInfo(String name) {
+        System.out.println(name);
     }
 
-    Student(Student s2) {
-        this.name = s2.name;
-        this.age = s2.age;
+    public void printInfo(int age) {
+        System.out.println(age);
     }
 
-    Student() {
-
+    public void printInfo(String name, int age) {
+        System.out.println(name + " " + age);
     }
 }
 
@@ -47,8 +45,7 @@ public class OOPS1 {
         s1.name = "sidkarma";
         s1.age = 25;
 
-        Student s2 = new Student(s1);
-        s2.printInfo();
+        s1.printInfo(s1.name, s1.age);
     }
     
 }
