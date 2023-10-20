@@ -1,6 +1,7 @@
 package bank;
 // OOPS
 // Encapsulation
+// Bank
 
 class Account {
     public String name;
