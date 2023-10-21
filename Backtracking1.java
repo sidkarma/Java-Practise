@@ -1,5 +1,4 @@
 // Backtracking
-
 import java.util.*;
 // 
 public class Backtracking1 {
