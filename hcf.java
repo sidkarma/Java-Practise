@@ -6,10 +6,10 @@ public class hcf {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        while(m!=0) {
+        while (m != 0) {
             int temp = m;
-            m = n%m;
-            n=temp;
+            m = n % m;
+            n = temp;
         }
         System.out.println(n);
     }
