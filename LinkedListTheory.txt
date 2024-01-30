@@ -1,0 +1,20 @@
+--ArrayList vs LinkedList
+-ArrayList
+1) ArrayList memory ke andar implement hota hai dynamic array ki help se
+2) Insert: O(n)
+3) Search: O(1)
+
+-LinkedList
+1) ke andar memory jo allocated hoti hai vo hoti hai non-contiguous
+2) Insert: O(1)
+3) Search: O(n)
+4) Variable size
+5) non-contiguous memory
+
+--LinkedList
+- banta hai basic structure se jise hum kehte hai node
+- head = first node
+- tail = last node
+- types: -> Singular
+         -> Double
+         -> Circular
