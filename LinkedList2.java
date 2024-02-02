@@ -14,7 +14,20 @@ class LinkedList2 {
         System.out.println(list.size());
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+            System.out.print(list.get(i) + "->");
         }
+        System.out.println("null");
+
+        // list.removeFirst();
+        // System.out.println(list);
+
+        // list.removeLast();
+        // System.out.println(list);
+
+        list.remove(3);
+        System.out.println(list);
+
+        // list.clear();
+        // System.out.println(list);
     }
 }
