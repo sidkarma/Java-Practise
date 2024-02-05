@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class LinkedList3 {
+public class LinkedList4 {
     static class Node {
         int data;
         Node next;
@@ -13,21 +13,16 @@ public class LinkedList3 {
 
     Node head;
 
-    public void reverseIterate() {
+    public Node reverseRecursive(Node head) {
         if (head == null || head.next == null) {
-            return; // No need to reverse if the list is empty or has only one element
+            return head;
         }
 
-        Node prevNode = head;
-        Node currNode = head.next;
-        while (currNode != null) {
-            Node nextNode = currNode.next;
-            currNode.next = prevNode;
-            prevNode = currNode;
-            currNode = nextNode;
-        }
-        head.next = null; // Set the next of the original head to null
-        head = prevNode; // Update the head to point to the new first node
+        Node newHead = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
     }
 
     public void addLast(int data) {
@@ -57,17 +52,17 @@ public class LinkedList3 {
     }
 
     public static void main(String[] args) {
-        LinkedList3 list = new LinkedList3();
+        LinkedList4 list = new LinkedList4();
         list.addLast(1);
-        list.addLast(2);
-        list.addLast(3);
-        list.addLast(4);
+        // list.addLast(2);
+        // list.addLast(3);
+        // list.addLast(4);
 
         System.out.println("Original List:");
         list.printList();
 
         System.out.println("Reversed List:");
-        list.reverseIterate();
+        list.head = list.reverseRecursive(list.head);
         list.printList();
     }
 }
