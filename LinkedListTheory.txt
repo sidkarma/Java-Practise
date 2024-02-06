@@ -18,3 +18,13 @@
 - types: -> Singular
          -> Double
          -> Circular
+
+--Floyd's Tortoise and Hare Algorithm (Floyd’s Cycle Finding Algorithm):
+    - Hare-Tortoise algorithm is a pointer algorithm that uses only two pointers,
+  moving through the sequence at different speeds. This algorithm is used to
+  find a loop in a linked list. It uses two pointers one moving twice as fast as
+  the other one. The faster one is called the fast pointer and the other one is called the slow pointer.
+    - How Does Floyd’s Cycle Finding Algorithm Works?
+        -> While traversing the linked list one of these things will occur-
+                1) The Fast pointer may reach the end (NULL) this shows that there is no loop in the linked list.
+                2) The Fast pointer again catches the slow pointer at some time therefore a loop exists in the linked list.
