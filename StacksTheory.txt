@@ -2,4 +2,13 @@
     -> Push O(1)
     -> Pop O(1)
     -> Peek O(1)
-    
+
+-Array
+    -> fixed size
+    -> stack full(arr elements == n)
+
+-ArrayList
+    -> Variable size
+
+-LinkedList
+    -> Variable size
