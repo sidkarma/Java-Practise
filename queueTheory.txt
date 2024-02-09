@@ -1,0 +1,8 @@
+-- Queue (FIFO)
+ -> front - remove elements
+ -> rear - add elements
+ -> Operations
+    1) Enqueue (Add)
+    2) Dequeue (Remove)
+    3) Front (Peek)
+-> Deque ("double-ended queue")
