@@ -6,3 +6,6 @@
     2) Dequeue (Remove)
     3) Front (Peek)
 -> Deque ("double-ended queue")
+
+-> Implementation 1
+    - Queue using Array
