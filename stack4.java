@@ -1,3 +1,5 @@
+// push at the bottom of the stack
+
 import java.util.Stack;
 
 public class stack4 {
