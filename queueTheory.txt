@@ -9,3 +9,6 @@
 
 -> Implementation 1
     - Queue using Array
+
+-> Circular Queue using Array
+    - Rear = (Rear+1)%size
