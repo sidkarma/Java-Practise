@@ -12,3 +12,43 @@
 
 -> Circular Queue using Array
     - Rear = (Rear+1)%size
+
+-> When implementing a queue using `ArrayDeque` and `LinkedList` in Java, there are several differences to consider:
+
+1. **Underlying Data Structure**:
+   - `ArrayDeque`: Internally uses a dynamic array to store elements.
+   It allows fast insertion and removal at both ends of the queue.
+   - `LinkedList`: Utilizes a doubly linked list where each element is stored in a node.
+   It allows fast insertion and removal at the beginning and end of the list.
+
+2. **Performance**:
+   - `ArrayDeque`: Generally offers better performance for most queue operations
+   (e.g., `enqueue`, `dequeue`, `peek`) due to its array-based implementation,
+   especially for random access and bulk operations.
+   - `LinkedList`: While it also provides efficient insertion and removal,
+   particularly at the beginning and end, it might have slightly slower performance
+   compared to `ArrayDeque` for queue operations due to the overhead of managing nodes and pointers.
+
+3. **Memory Usage**:
+   - `ArrayDeque`: Typically consumes less memory than `LinkedList` since it doesn't require
+   additional pointers for every element.
+   - `LinkedList`: Requires extra memory to store node references, which might result in
+   higher memory usage, especially for large queues.
+
+4. **Iterator Performance**:
+   - `ArrayDeque`: Iterators provided by `ArrayDeque` are generally faster than those
+   of `LinkedList` since it supports indexed access.
+   - `LinkedList`: Iterating over elements might be slower compared
+   to `ArrayDeque` due to the nature of traversing nodes sequentially.
+
+5. **Use Cases**:
+   - `ArrayDeque`: Ideal for most general-purpose queue implementations where fast
+   insertion and removal at both ends are required. It's well-suited for implementing a
+   queue in scenarios like breadth-first search, where efficient FIFO (First-In-First-Out) behavior is crucial.
+   - `LinkedList`: Suitable for scenarios where frequent insertion and deletion
+   operations are concentrated at the beginning or end of the queue. It might be
+   preferred when implementing a double-ended queue (deque) or if the queue's size varies significantly during runtime.
+
+In summary, `ArrayDeque` is often preferred for its efficient implementation of
+queue operations and lower memory overhead, while `LinkedList` might be chosen for specialized
+cases where insertion and deletion operations are primarily focused at the beginning or end of the queue.
