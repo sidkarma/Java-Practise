@@ -1,1 +1,4 @@
 ->  Binary Tree: Hierarchial Data Structure
+    - At max 2 children
+    - Levels and Subtree
+        - 
