@@ -1,8 +1,8 @@
-//  Count of Nodes : o(n)
+//  Sum of Nodes
 
 import java.util.*;
 
-public class BinaryTree2 {
+public class BinaryTree3 {
     static class Node {
         int data;
         Node left;
@@ -31,20 +31,20 @@ public class BinaryTree2 {
         }
     }
 
-    public static int countOfNOdes(Node root) {
+    public static int sumOfNOdes(Node root) {
         if (root == null) {
             return 0;
         }
-        int leftNodes = countOfNOdes(root.left);
-        int rightNodes = countOfNOdes(root.right);
+        int leftSum = sumOfNOdes(root.left);
+        int rightSum = sumOfNOdes(root.right);
 
-        return leftNodes + rightNodes + 1;
+        return leftSum + rightSum + root.data;
     }
 
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
-        System.out.println(countOfNOdes(root));
+        System.out.println(sumOfNOdes(root));
     }
 }
