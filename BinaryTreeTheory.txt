@@ -7,12 +7,12 @@
         - Left Subtree
         - Right Subtree
     
-    -> In-order Traversal
+    -> In-order Traversal : O(n)
         - Left Subtree
         - Root
         - Right Subtree
 
-    -> Post-order Traversal
+    -> Post-order Traversal : O(n)
         - Left Subtree
         - Right Subtree
         - Root
