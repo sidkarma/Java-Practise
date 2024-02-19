@@ -2,7 +2,17 @@
     - At max 2 children
     - Levels and Subtree
     
-    -> Pre-order Traversal
+    -> Pre-order Traversal : O(n)
         - Root
         - Left Subtree
         - Right Subtree
+    
+    -> In-order Traversal
+        - Left Subtree
+        - Root
+        - Right Subtree
+
+    -> Post-order Traversal
+        - Left Subtree
+        - Right Subtree
+        - Root
