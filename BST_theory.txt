@@ -1,5 +1,5 @@
 --  Binary Search Tree
     - A Binary Tree
-    - Left subtree nodes < Root
-    - Right subtree nodes > Root
-    - Left and Right subtree are also BST with no duplicates
+    -> 1. Left subtree nodes < Root
+    -> 2. Right subtree nodes > Root
+    -> 3. Left and Right subtree are also BST with no duplicates
