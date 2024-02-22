@@ -7,3 +7,13 @@
 
     - BST Search (BST makes Search efficient)
         -> O(height) -> log(n)
+
+    - Skewed Trees
+
+    - Strategy:
+        -> Most problems will be solved using recursion ie by dividing into sub-problems and making recursive calls
+           on subtrees.
+           
+    - Build a BST
+
+    - Search in a BST
