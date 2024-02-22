@@ -34,8 +34,21 @@ public class BST1 {
         inOrder(root.right);
     }
 
+    public static boolean search(Node root, int key) { // O(Height)
+        if (root == null) {
+            return false;
+        }
+        if (root.data > key) { // Left subtree
+            return search(root.left, key);
+        } else if (root.data == key) {
+            return true;
+        } else {
+            return search(root.right, key);
+        }
+    }
+
     public static void main(String[] args) {
-        int vals[] = { 5, 1, 3, 4, 2, 7 };
+        int vals[] = { 8, 5, 3, 1, 4, 6, 10, 11, 14 };
         Node root = null;
 
         for (int i = 0; i < vals.length; i++) {
@@ -44,5 +57,11 @@ public class BST1 {
 
         inOrder(root);
         System.out.println();
+
+        if (search(root, 7)) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
+        }
     }
 }

@@ -1,8 +1,9 @@
 --  Binary Search Tree
     - A Binary Tree
-    -> 1. Left subtree nodes < Root
-    -> 2. Right subtree nodes > Root
-    -> 3. Left and Right subtree are also BST with no duplicates
+        -> 1. Left subtree nodes < Root
+        -> 2. Right subtree nodes > Root
+        -> 3. Left and Right subtree are also BST with no duplicates
+        
     - Special Property :    In-order Traversal of BST gives a sorted sequence
 
     - BST Search (BST makes Search efficient)
@@ -17,3 +18,9 @@
     - Build a BST
 
     - Search in a BST
+
+    - Delete a Node
+        Cases:
+            1. No child (Leaf Node)
+            2. One child
+            3. Two children
