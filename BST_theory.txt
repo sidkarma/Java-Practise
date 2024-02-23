@@ -24,3 +24,9 @@
             1. No child (Leaf Node)
             2. One child
             3. Two children
+
+            Case 1: No child (Leaf Node)
+                -> Delete Node
+                -> & return null to parent
+
+            Case 2:
