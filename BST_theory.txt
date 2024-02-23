@@ -29,4 +29,11 @@
                 -> Delete Node
                 -> & return null to parent
 
-            Case 2:
+            Case 2: One child
+                -> Delete Node
+                -> & replace with child node
+
+            Case 3: Two children
+                -> Replace value with in-order successor
+                -> Delete the node for in-order successor
+            
