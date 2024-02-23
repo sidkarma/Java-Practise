@@ -69,7 +69,7 @@ public class BST1 {
                 return root.left;
             }
 
-            // case 3:
+            // case 3: -- Important
             Node IS = inOrderSuccessor(root.right);
             root.data = IS.data;
             root.right = delete(root.right, IS.data);
@@ -77,7 +77,7 @@ public class BST1 {
         return root;
     }
 
-    public static Node inOrderSuccessor(Node root) {
+    public static Node inOrderSuccessor(Node root) { // -- Important
         while (root.left != null) {
             root = root.left;
         }
