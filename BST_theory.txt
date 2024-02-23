@@ -34,6 +34,6 @@
                 -> & replace with child node
 
             Case 3: Two children
-                -> Replace value with in-order successor
+                -> Replace value with in-order successor (Left most in right subtree)
                 -> Delete the node for in-order successor
             
