@@ -1,0 +1,5 @@
+--  HashSet in Java:
+    -> Insert/Add - O(1)
+    -> Search/Contains - O(1)
+    -> Delete/Remove - O(1)
+    
