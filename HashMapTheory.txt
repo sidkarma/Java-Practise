@@ -1,0 +1,10 @@
+-- Implementation HashMap
+    -> O(1)
+    -> put()
+    -> get()
+    -> containsKey()
+    -> remove()
+    -> size()
+    -> keySet()
+
+    -   <key, value>
