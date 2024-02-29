@@ -7,4 +7,6 @@
     -> size()
     -> keySet()
 
-    -   <key, value>
+    - <key, value>
+    - HashMap is internally implemented as an Array of LinkedList
+    - 
