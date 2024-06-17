@@ -10,3 +10,4 @@
     - <key, value>
     - HashMap is internally implemented as an Array of LinkedList
     - 
+-- Hashing -> data ki form change kar dena
