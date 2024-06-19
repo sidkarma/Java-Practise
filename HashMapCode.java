@@ -41,6 +41,7 @@ public class HashMapCode {
             return -1;
         }
 
+        @SuppressWarnings("unchecked")
         private void rehash() {
             LinkedList<Node> oldBucket[] = buckets;
             buckets = new LinkedList[N * 2];
@@ -89,7 +90,16 @@ public class HashMapCode {
         }
 
         public V remove(K key) {
-            return null;
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // data index
+
+            if (di == -1) { // key doesn't exist
+                return null;
+            } else { // key exists
+                Node node = buckets[bi].remove(di);
+                n--;
+                return node.value;
+            }
         }
 
         public V get(K key) {
@@ -105,11 +115,20 @@ public class HashMapCode {
         }
 
         public ArrayList<K> keySet() {
-            return null;
+            ArrayList<K> keys = new ArrayList<>();
+
+            for (int i = 0; i < buckets.length; i++) { // bi
+                LinkedList<Node> ll = buckets[i];
+                for (int j = 0; j < ll.size(); j++) { // di
+                    Node node = ll.get(j);
+                    keys.add(node.key);
+                }
+            }
+            return keys;
         }
 
         public boolean isEmpty() {
-            return false;
+            return n == 0;
         }
     }
 
@@ -118,5 +137,13 @@ public class HashMapCode {
         map.put("India", 190);
         map.put("China", 200);
         map.put("USA", 20);
+
+        ArrayList<String> keys = map.keySet();
+        for (int i = 0; i < keys.size(); i++) {
+            System.out.println(keys.get(i) + " " + map.get(keys.get(i)));
+        }
+
+        map.remove("India");
+        System.out.println(map.get("India"));
     }
 }
