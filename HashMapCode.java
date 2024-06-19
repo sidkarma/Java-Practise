@@ -78,11 +78,45 @@ public class HashMapCode {
         }
 
         public boolean containsKey(K key) {
-            return false;
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // data index
+
+            if (di == -1) { // key doesn't exist
+                return false;
+            } else { // key exists
+                return true;
+            }
         }
 
         public V remove(K key) {
             return null;
         }
+
+        public V get(K key) {
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // data index
+
+            if (di == -1) { // key doesn't exist
+                return null;
+            } else { // key exists
+                Node data = buckets[bi].get(di);
+                return data.value;
+            }
+        }
+
+        public ArrayList<K> keySet() {
+            return null;
+        }
+
+        public boolean isEmpty() {
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("India", 190);
+        map.put("China", 200);
+        map.put("USA", 20);
     }
 }
