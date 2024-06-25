@@ -14,7 +14,7 @@ public class Hashing_prob3 {
         for (int j = 0; j < arr2.length; j++) {
             if (set.contains(arr2[j])) {
                 count++;
-                set.remove(arr2[j]);
+                set.remove(arr2[j]); 
             }
         }
         return count;
