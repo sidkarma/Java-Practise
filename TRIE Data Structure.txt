@@ -1,0 +1,11 @@
+TRIE Data Structure: also known as  -> prefix tree
+                                    -> digital search tree
+                                    -> Retrieval tree
+
+What is a Trie?
+words[] = "the", "a", "there", "their", "any"   (array of strings)
+
+in starting tries' root node is empty
+used for fast search
+tC = O(n)
+prefix is not repeated
