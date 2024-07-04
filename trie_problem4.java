@@ -1,6 +1,6 @@
-// Search in TRIE
+// Word Break Problem
 
-public class trie_problem3 {
+public class trie_problem4 {
 
     static class Node {
         Node[] children;
@@ -53,14 +53,28 @@ public class trie_problem3 {
         return true;
     }
 
+    public static boolean wordBreak(String key) {
+        if (key.length() == 0) {
+            return true;
+        }
+
+        for (int i = 1; i <= key.length(); i++) {
+            String firstPart = key.substring(0, i);
+            String secondPart = key.substring(i);
+            if (search(firstPart) && wordBreak(secondPart)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        String words[] = { "the", "a", "there", "their", "any" };
+        String words[] = { "i", "like", "sam", "samsung", "mobile" };
+        String key = "ilikesamsung";
+
         for (int i = 0; i < words.length; i++) {
             insert(words[i]);
         }
-        System.out.println(search("their"));
-        System.out.println(search("thor"));
-        System.out.println(search("an"));
+        System.out.println(wordBreak(key));
     }
-
 }
