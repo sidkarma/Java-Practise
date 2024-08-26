@@ -1,3 +1,28 @@
 GRAPHS:
 
 - Network of Nodes
+    - Nodes = Vertex (plural: vertices)
+    - Connection between Nodes = Edge
+- Algos
+    - Shortest Path
+
+- Basic of GRAPHS
+    -> Edge Direction
+        > Uni-directional
+        > Bi-directional / Undirectional
+    -> Edge Weight
+        > Weighted
+        > Un-Weighted
+
+- Storing a Graph
+    > Adjacency List (most common and efficient)
+    > Adjacency Matrix
+    > Edge List
+    >  2D Matrix (Implicit Graph)
+
+        -> Adjacency List (List of Lists) :-
+               
+- Graph Traversals
+    > Breadth First Search (BFS)
+
+    > Depth First Search (DFS)
